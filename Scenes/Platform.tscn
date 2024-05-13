@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwh24rhl25jb8"]
+
+[ext_resource type="Texture2D" uid="uid://bxfxgh3idmsr1" path="res://Assets/Gandalf/GandalfHardcore FREE Platformer Assets/GandalfHardcore Platformer Assets/GandalfHardcore Platformer Assets.png" id="1_q80ue"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5r8io"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_q80ue")
+region_enabled = true
+region_rect = Rect2(194, 159, 94, 31)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5r8io")
